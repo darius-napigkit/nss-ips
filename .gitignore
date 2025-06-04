@@ -1,0 +1,28 @@
+# Terraform specific files
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+crash.log
+override.tf
+override_*.tf
+*.tfvars
+*.tfvars.json
+secrets.tfvars # Highly recommended to ignore any file potentially containing secrets
+
+# Ansible specific files
+.ansible/
+*.retry
+*.log
+inventory/*.vault # Example if you store encrypted files here
+
+# General ignored files
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*.swo
+
+# Editor specific files
+.vscode/
+.idea/
